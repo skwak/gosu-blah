@@ -16,12 +16,16 @@ class Ball
   def move
     @x += @vx
     @y += @vy
-    if @x > 640
+    if @x > 620
       @vx = -5
+    elsif @x < 0
+      @vx = 5
     end
 
-    if @y > 480
+    if @y > 460
       @vy = -5
+    elsif @y < 0
+      @vy = 5
     end
   end
 
